@@ -4,6 +4,7 @@ from schemas.reqres import list_users_schema, create_user_schema, update_user_sc
 
 
 def test_get_list_users(reqres_session):
+
     page_number = 2
 
     result: Response = reqres_session.get(
@@ -17,8 +18,8 @@ def test_get_list_users(reqres_session):
 
 
 def test_create_user(reqres_session):
-    name = 'anna'
-    job = 'qa'
+    name = 'Evgen'
+    job = 'AQA'
 
     result: Response = reqres_session.post(
         url='/api/users',
@@ -36,8 +37,8 @@ def test_create_user(reqres_session):
 
 
 def test_update_patch_user(reqres_session):
-    name = 'anna'
-    job = 'qa'
+    name = 'Evgen'
+    job = 'AQA'
     id = 2
 
     result: Response = reqres_session.patch(
