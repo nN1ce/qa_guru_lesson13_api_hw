@@ -2,3 +2,4 @@ requests
 pytest
 voluptuous
 pytest-voluptuous
+allure-pytest
